@@ -4,7 +4,7 @@ This Windows Form allow to simulate a MessageBox with details box.
 
 ![CustomMessageBox With Details](https://github.com/pasqualeambrosio/CustomMessageBox/blob/main/custom%20message%20box%20with%20details.jpg)
 
-## Setup button text
+### Setup button text
 ```
 CustomMessageBox.CustomMessageDictionay.btnOk = "Ok";
 CustomMessageBox.CustomMessageDictionay.btnYes = "Si";
@@ -16,7 +16,7 @@ CustomMessageBox.CustomMessageDictionay.btnIgnore = "Ignora";
 CustomMessageBox.CustomMessageDictionay.btnDetails = "Dettagli";
 ```
 
-## Call CustomMessageBox - version 1
+### Call CustomMessageBox - version 1
 ```
 if (CustomMessageBox.Show("Are you sure to continue?",
                           "Info",
@@ -33,7 +33,7 @@ else
 }
 ```
 
-## Call CustomMessageBox - version 2
+### Call CustomMessageBox - version 2
 ```
 CustomMessageBox.Show(new CustomMessageBox.CustomMessageBoxParams
 {
