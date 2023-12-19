@@ -1,10 +1,13 @@
 # CustomMessageBox
 
-This Windows Form allow to simulate a MessageBox with details box.
+This Windows Form simulate a MessageBox but allows to add details information.
 
 ![CustomMessageBox With Details](https://github.com/pasqualeambrosio/CustomMessageBox/blob/main/custom%20message%20box%20with%20details.jpg)
 
 ### Setup button text
+By default the text of buttons are in English.
+To customize languages set the var `CustomMessageBox.CustomMessageDictionay`
+
 ```
 CustomMessageBox.CustomMessageDictionay.btnOk = "Ok";
 CustomMessageBox.CustomMessageDictionay.btnYes = "Si";
@@ -17,6 +20,8 @@ CustomMessageBox.CustomMessageDictionay.btnDetails = "Dettagli";
 ```
 
 ### Call CustomMessageBox - version 1
+This version can be used to 'replace' the actual MessageBox call.
+
 ```
 if (CustomMessageBox.Show("Are you sure to continue?",
                           "Info",
@@ -34,6 +39,7 @@ else
 ```
 
 ### Call CustomMessageBox - version 2
+This version use a object as parameters.
 ```
 CustomMessageBox.Show(new CustomMessageBox.CustomMessageBoxParams
 {
