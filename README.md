@@ -8,7 +8,7 @@ This Windows Form simulate a MessageBox but allows to add details information.
 By default the text of buttons are in English.
 To customize languages set the var `CustomMessageBox.CustomMessageDictionay`
 
-```
+```csharp
 CustomMessageBox.CustomMessageDictionay.btnOk = "Ok";
 CustomMessageBox.CustomMessageDictionay.btnYes = "Si";
 CustomMessageBox.CustomMessageDictionay.btnNo = "No";
@@ -22,7 +22,7 @@ CustomMessageBox.CustomMessageDictionay.btnDetails = "Dettagli";
 ### Call CustomMessageBox - version 1
 This version can be used to 'replace' the actual MessageBox call.
 
-```
+```csharp
 if (CustomMessageBox.Show("Are you sure to continue?",
                           "Info",
                           "The operation is irreversible",
@@ -40,7 +40,7 @@ else
 
 ### Call CustomMessageBox - version 2
 This version use a object as parameters.
-```
+```csharp
 CustomMessageBox.Show(new CustomMessageBox.CustomMessageBoxParams
 {
     text = "Continue?",
